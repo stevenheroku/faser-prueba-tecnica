@@ -18,6 +18,7 @@ import { MatCheckboxModule } from '@angular/material';
 	declarations: [
 		AppComponent
 	],
+	//importo todas las librerias a utilizar.
 	imports: [
 		BrowserModule,
 		AppRoutingModule,
