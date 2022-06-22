@@ -28,12 +28,15 @@ export class AppComponent  {
     new Tarea(5, 'Regar las plantas', 20)
   
   ];
-
+  //creo un datasource para el ordanmiento de las tareas por medio del numero de minutos
   dataSource:any;
 
+  //creo un select para poder crear una nueva tarea
   tareaselect: Tarea = new Tarea(0, "", 0);
 
+  //creo un objeto de viewchild de tipo mattable para poder crear una tabla usando HTML y poder agregar nuevas tareas.
   @ViewChild(MatTable,{static:true}) tabla1!: MatTable<Tarea>;
+  //creo un objeto de viewchild de tipo MatSort el cual me sirve para poder ordenar las tareas por medio del numero de minutos.
   @ViewChild(MatSort, {static: true}) sort!: MatSort;
 
   //este metodo lo utilizo para poder eliminar una tarea registrada en la tabla
